@@ -1,0 +1,23 @@
+---
+# defaults file for olm
+olm_ver: 0.21.2
+olm_os: linux
+olm_arch: amd64
+olm_parent_install_dir: /usr/local
+olm_exes:
+  - olm
+  - catalog
+  - cpb
+  - package-server
+olm_mirror: https://github.com/operator-framework/operator-lifecycle-manager/releases/download
+olm_checksums:
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.21.2/checksums.txt
+  '0.21.2':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.21.2/operator-lifecycle-manager_0.21.2_linux_amd64.tar.gz
+    linux_amd64: sha256:66344c67294258a3275a1324569080ff40c252b0dafeace5b2d1a241a8611e13
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.21.2/operator-lifecycle-manager_0.21.2_linux_arm64.tar.gz
+    linux_arm64: sha256:823238f31047ff901a25ea95dfeb3d7f99d4eacf4dd61a0aebf835ca0d71bc9e
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.21.2/operator-lifecycle-manager_0.21.2_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:ffa0e54e5e9eec1cd1452391f51533634e8db97a94d68eae336d25d9db8ca1dd
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.21.2/operator-lifecycle-manager_0.21.2_linux_s390x.tar.gz
+    linux_s390x: sha256:c5a1bfc4d84b6f04ff2ffc13e071ccb178df225f329ea5b382ec7c5fb94d6ecd

@@ -1,0 +1,9 @@
+---
+# vars file for olm
+olm_platform: '{{ olm_os }}_{{ olm_arch }}'
+olm_name: operator-lifecycle-manager_{{ olm_ver }}_{{ olm_platform }}
+olm_archive: '{{ olm_name }}.{{ olm_archive_type | default("tar.gz") }}'
+olm_tmp_archive: '{{ olm_tmp_dir | default("/tmp") }}/{{ olm_archive }}'
+olm_url: '{{ olm_mirror }}/v{{ olm_ver }}/{{ olm_archive }}'
+olm_checksum: '{{ olm_checksums[olm_ver][olm_platform] }}'
+olm_install_dir: '{{ olm_parent_install_dir }}/{{ olm_name }}'
