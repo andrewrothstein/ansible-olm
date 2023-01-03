@@ -1,5 +1,7 @@
 ---
 # vars file for olm
+olm_os: '{{ ansible_system | lower }}'
+olm_arch: '{{ olm_arch_map[ansible_architecture] }}'
 olm_platform: '{{ olm_os }}_{{ olm_arch }}'
 olm_name: operator-lifecycle-manager_{{ olm_ver }}_{{ olm_platform }}
 olm_archive: '{{ olm_name }}.{{ olm_archive_type | default("tar.gz") }}'
