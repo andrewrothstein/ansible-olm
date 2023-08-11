@@ -37,4 +37,6 @@ dl_ver() {
     dl $app $ver $lchecksums linux s390x
 }
 
-dl_ver operator-lifecycle-manager ${1:-0.22.0}
+dl_ver operator-lifecycle-manager 0.23.0
+dl_ver operator-lifecycle-manager 0.24.0
+dl_ver operator-lifecycle-manager ${1:-0.25.0}
