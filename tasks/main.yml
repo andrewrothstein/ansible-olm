@@ -1,7 +1,8 @@
 ---
-- include_role:
+- name: Installing andrewrothstein.unarchivedeps
+  ansible.builtin.include_role:
     name: andrewrothstein.unarchivedeps
-- name: resolve platform specific vars
+- name: Resolve platform specific vars
   include_vars: '{{ item }}'
   with_first_found:
     - files:
@@ -11,49 +12,50 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: looking for install at {{ olm_install_dir }}
+- name: Looking for install at {{ olm_install_dir }}
   become: true
-  stat:
+  ansible.builtin.stat:
     path: '{{ olm_install_dir }}'
   changed_when: false
   register: olm_binary
-- when: not olm_binary.stat.exists
+- name: Downloading and installing olm
+  when: not olm_binary.stat.exists
   block:
-    - name: downloading {{ olm_url }} to {{ olm_tmp_archive }}
+    - name: Downloading {{ olm_url }} to {{ olm_tmp_archive }}
       become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ olm_url }}'
         dest: '{{ olm_tmp_archive }}'
         checksum: '{{ olm_checksum }}'
-        mode: 0644
-    - name: mkdir {{ olm_install_dir }}
+        mode: '644'
+    - name: Mkdir {{ olm_install_dir }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ olm_install_dir }}'
         state: directory
-        mode: 0755
-    - name: unarchiving {{ olm_tmp_archive }} into {{ olm_install_dir }}
+        mode: '755'
+    - name: Unarchiving {{ olm_tmp_archive }} into {{ olm_install_dir }}
       become: true
       become_user: root
-      unarchive:
+      ansible.builtin.unarchive:
         remote_src: true
         src: '{{ olm_tmp_archive }}'
         dest: '{{ olm_install_dir }}'
         creates: '{{ olm_install_dir }}/olm'
   always:
-    - name: rm {{ olm_tmp_archive }}
+    - name: Rm {{ olm_tmp_archive }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ olm_tmp_archive }}'
         state: absent
-- name: linking exes in {{ olm_install_dir }} to {{ olm_parent_install_dir }}/bin...
+- name: Linking exes in {{ olm_install_dir }} to {{ olm_parent_install_dir }}/bin...
   become: true
   become_user: root
   with_items: '{{ olm_exes }}'
-  file:
+  ansible.builtin.file:
     src: '{{ olm_install_dir }}/{{ item }}'
     dest: '{{ olm_parent_install_dir }}/bin/{{ item }}'
     state: link

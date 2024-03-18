@@ -1,35 +1,34 @@
 ---
 galaxy_info:
   author: Andrew Rothstein
-  description: installs operator lifecycle management tools
   company: BlackRock Financial Management
-  license:
-    - MIT
-  min_ansible_version: 2.0
+  description: installs operator lifecycle management tools
+  galaxy_tags:
+    - development
+  license: MIT
+  min_ansible_version: '2.0'
+  namespace: andrewrothstein
   platforms:
     - name: Alpine
       versions:
         - all
-    - name: Archlinux
+    - name: ArchLinux
       versions:
         - all
     - name: Debian
       versions:
+        - bookworm
         - bullseye
-        - buster
     - name: EL
       versions:
-        - 8
-        - 9
+        - '8'
+        - '9'
     - name: Fedora
       versions:
-        - 36
-        - 37
+        - '38'
+        - '39'
     - name: Ubuntu
       versions:
-        - bionic
         - focal
         - jammy
-  galaxy_tags:
-    - development
   role_name: olm
