@@ -1,6 +1,6 @@
 ---
 # defaults file for olm
-olm_ver: 0.28.0
+olm_ver: 0.38.0
 olm_arch_map:
   aarch64: arm64
   ppc64le: ppc64le
@@ -94,3 +94,93 @@ olm_checksums:
     linux_ppc64le: sha256:9328bfca375ce238ba2a012183df002c684513f11b09e2552171826f93ac2948
     # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.28.0/operator-lifecycle-manager_0.28.0_linux_s390x.tar.gz
     linux_s390x: sha256:06d721697642d94175ad2c963f8a2d25894e12b795a6f0d26024d2829670eaa2
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.30.0/checksums.txt
+  '0.30.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.30.0/operator-lifecycle-manager_0.30.0_linux_amd64.tar.gz
+    linux_amd64: sha256:2d5f871cd579e3c766756810b7c7055e93bf98c595409575dd61a8bf54c12fb0
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.30.0/operator-lifecycle-manager_0.30.0_linux_arm64.tar.gz
+    linux_arm64: sha256:a3d5664388823edcc38882df9017e9997074e4521f14b671f8a3a5900f02ee61
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.30.0/operator-lifecycle-manager_0.30.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:931cad0c74ca97ce0bc5b16285355c84f076a2c31abaf38880002622dbd644bf
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.30.0/operator-lifecycle-manager_0.30.0_linux_s390x.tar.gz
+    linux_s390x: sha256:567ec87a3709453ff0c083d3b1ffd420662ece0218463bcd3436e5590efeda61
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.31.0/checksums.txt
+  '0.31.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.31.0/operator-lifecycle-manager_0.31.0_linux_amd64.tar.gz
+    linux_amd64: sha256:d969e168e45e6e467df14549ec2d203ad7beafd4cfebc6c32c444750f096b318
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.31.0/operator-lifecycle-manager_0.31.0_linux_arm64.tar.gz
+    linux_arm64: sha256:9ab532262ca92702826bcfa08741a7867e0af0a1b5b7883702d5a8cb375a74f2
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.31.0/operator-lifecycle-manager_0.31.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:02ea3cc9d2e5a94effe7a0af124f827819ab6cb338b989abc46e6e688d64b0e4
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.31.0/operator-lifecycle-manager_0.31.0_linux_s390x.tar.gz
+    linux_s390x: sha256:be88ae2da243dd2f56ee9c2a21dc6a1d78453851a576881468f5e0606c3a4617
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.32.0/checksums.txt
+  '0.32.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.32.0/operator-lifecycle-manager_0.32.0_linux_amd64.tar.gz
+    linux_amd64: sha256:699bdd02193f06bd9c1e1ce4784ede75f9df4f8f4813a8de88219bd1dc25dd01
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.32.0/operator-lifecycle-manager_0.32.0_linux_arm64.tar.gz
+    linux_arm64: sha256:a53a21b4004df4cfd1b69de7ca1d0cb2adb97bde4063157d60a443ec01fb15f8
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.32.0/operator-lifecycle-manager_0.32.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:1af730ed433113a8b97638b1b7679079317b34c4a362513809fad3db4dcd84c4
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.32.0/operator-lifecycle-manager_0.32.0_linux_s390x.tar.gz
+    linux_s390x: sha256:3f607356d3cda4cc8a879c749788987974e642eb4166fa13246e666b5e57d568
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.33.0/checksums.txt
+  '0.33.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.33.0/operator-lifecycle-manager_0.33.0_linux_amd64.tar.gz
+    linux_amd64: sha256:8f7e9bc9dc8653071e5acc8548be0775df74de001f8feb2867473c9578c1a275
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.33.0/operator-lifecycle-manager_0.33.0_linux_arm64.tar.gz
+    linux_arm64: sha256:8f81fa165fe1b62891bd9ac77ba0bf3a37bbed9ae2feb50291128d59f6c3a7a5
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.33.0/operator-lifecycle-manager_0.33.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:798dcb701f53f86418ce19b0d1543876bb5f8b60a9faaa4377eb624290e5e9ae
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.33.0/operator-lifecycle-manager_0.33.0_linux_s390x.tar.gz
+    linux_s390x: sha256:4b44c791876867cb1c059a2c1a612ee9ba9fba0bdbded1aef815c47fe9f57021
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.34.0/checksums.txt
+  '0.34.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.34.0/operator-lifecycle-manager_0.34.0_linux_amd64.tar.gz
+    linux_amd64: sha256:396024c73ca05c9b4c2051779c6260181963435792c2cb5923b62f1c37bbe194
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.34.0/operator-lifecycle-manager_0.34.0_linux_arm64.tar.gz
+    linux_arm64: sha256:6d8c748aef31417dff74b5073d40411f8bb3e0798de416ba32e94e9946bd25c5
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.34.0/operator-lifecycle-manager_0.34.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:03b5b1ae0dcad33b50a68132e663d23c877b0df242eafae722b68311f7ed21d1
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.34.0/operator-lifecycle-manager_0.34.0_linux_s390x.tar.gz
+    linux_s390x: sha256:896854773f4036d0f5b8bf2cf9459725a3831ebe57261fd91b1f1a82c16a19ac
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.35.0/checksums.txt
+  '0.35.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.35.0/operator-lifecycle-manager_0.35.0_linux_amd64.tar.gz
+    linux_amd64: sha256:653a792a1ba82077e8829eb74be5efd61fce90f4dafdda2b62c44559f183f986
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.35.0/operator-lifecycle-manager_0.35.0_linux_arm64.tar.gz
+    linux_arm64: sha256:b9d9511d60682a78b37fe2c8b5758752a3dd2a1847405048f8290b36fc730663
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.35.0/operator-lifecycle-manager_0.35.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:33d47ae5829bfc9403a2a1f94fd4b3a974ce0e18a4691a4117b487148f7bd24b
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.35.0/operator-lifecycle-manager_0.35.0_linux_s390x.tar.gz
+    linux_s390x: sha256:ae909a9eb3790241a24f6ff09051f59ce51478328d4e42ed1cd400cff0853b91
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.36.0/checksums.txt
+  '0.36.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.36.0/operator-lifecycle-manager_0.36.0_linux_amd64.tar.gz
+    linux_amd64: sha256:98dd28beb87af5675db3fbb120b99ccdb39487c604f5679247b2a6f13c2f81e7
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.36.0/operator-lifecycle-manager_0.36.0_linux_arm64.tar.gz
+    linux_arm64: sha256:b78b29d4be14598c50ac9d09fc9fe1fbeefe201773f2982eea568413cbafbb72
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.36.0/operator-lifecycle-manager_0.36.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:cf82c5a1e79b07a1df79909caf34945e31b3d795ed5fa01a18d4177102015d41
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.36.0/operator-lifecycle-manager_0.36.0_linux_s390x.tar.gz
+    linux_s390x: sha256:b25f2a516896e4d659406430031e67e4976dcbf3d69638ec5ea76a63d5a9def0
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.37.0/checksums.txt
+  '0.37.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.37.0/operator-lifecycle-manager_0.37.0_linux_amd64.tar.gz
+    linux_amd64: sha256:1c20f12e28a9026c50d055fc01cb4208625ca94a09dea5337afbaf683c6d9ad3
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.37.0/operator-lifecycle-manager_0.37.0_linux_arm64.tar.gz
+    linux_arm64: sha256:dce5ec33f59e27170e86a44b6fbb44e5a0e1887e061fe03416e575a5b4173341
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.37.0/operator-lifecycle-manager_0.37.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:a6e187ff1ae4f502d5ef2f611d08d32bb792c15ba78ccdb89088741b8dc33912
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.37.0/operator-lifecycle-manager_0.37.0_linux_s390x.tar.gz
+    linux_s390x: sha256:049bdaaaed00adcc8950e8a1f686a62c177796f0eab44184a67984c4036664d7
+  # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.38.0/checksums.txt
+  '0.38.0':
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.38.0/operator-lifecycle-manager_0.38.0_linux_amd64.tar.gz
+    linux_amd64: sha256:a16a162f2f04c20452155d45438f45b285ef22d4f35be0a867ac44a6222b9bdb
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.38.0/operator-lifecycle-manager_0.38.0_linux_arm64.tar.gz
+    linux_arm64: sha256:0f8f83437271c5de3ed18db6111c5113991df1fc2cd880079f5384ff09de8232
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.38.0/operator-lifecycle-manager_0.38.0_linux_ppc64le.tar.gz
+    linux_ppc64le: sha256:1dd1d2a0f10d987f04e2da00b972724b052c18a35975b41936e16de6cb4e8f32
+    # https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.38.0/operator-lifecycle-manager_0.38.0_linux_s390x.tar.gz
+    linux_s390x: sha256:2163cffccaa50ad302b021820053e4baa09bf097b8e6ee6e374819f97281e89a
